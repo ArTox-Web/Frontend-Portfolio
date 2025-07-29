@@ -21,13 +21,13 @@ const About = () => {
       title: 'Senior Developer',
       company: 'Xebia Solutions Architects',
       period: '2021 - 2022',
-      description: 'Full-stack development with focus on React and Node.js applications'
+      description: 'Leading Full-stack development tesms with focus on React and Node.js applications'
     },
      {
       title: 'Frontend Developer',
       company: 'Wipro Ltd',
       period: '2019 - 2021',
-      description: 'Full-stack development with focus on React and Node.js applications'
+      description: 'Frontend development with focus on React and Node.js applications'
     },
   ];
 
