@@ -198,7 +198,7 @@ const About = () => {
               <div>
                 <h4 className="font-semibold text-slate-700 mb-4">Backend</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Node.js', 'Python', 'Express', 'REST APIs', 'Database Design'].map((tech) => (
+                  {['Node.js', 'AI Tools','Express', 'Database Design'].map((tech) => (
                     <span key={tech} className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
                       {tech}
                     </span>
@@ -208,7 +208,7 @@ const About = () => {
               <div>
                 <h4 className="font-semibold text-slate-700 mb-4">Management</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Team Leadership', 'Project Management', 'Agile', 'Mentoring', 'Technical Strategy'].map((skill) => (
+                  {['Team Leadership', 'Project Management', 'Agile','SCRUM', 'Mentoring', 'Technical Strategy'].map((skill) => (
                     <span key={skill} className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">
                       {skill}
                     </span>
