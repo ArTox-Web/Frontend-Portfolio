@@ -95,7 +95,7 @@ const About = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Expertise in React, Node.js, Python, and modern development practices
+                      Expertise in React, Node.js, AI Tools, and modern development practices
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
