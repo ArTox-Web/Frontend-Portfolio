@@ -1,13 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Palette, Zap, Heart, User, GraduationCap, Briefcase } from 'lucide-react';
+import { Code, Palette, Zap, Heart, User, GraduationCap, Briefcase, Award, MapPin } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { icon: Code, title: 'Clean Code', description: 'Writing maintainable and scalable code' },
-    { icon: Palette, title: 'UI/UX Design', description: 'Creating beautiful and intuitive interfaces' },
-    { icon: Zap, title: 'Performance', description: 'Optimizing applications for speed and efficiency' },
-    { icon: Heart, title: 'Passion', description: 'Loving what I do and continuously learning' }
+    { icon: Code, title: 'Full-Stack Development', description: 'React, Node.js, Python, and modern web technologies' },
+    { icon: Palette, title: 'UI/UX Design', description: 'Creating beautiful and intuitive user interfaces' },
+    { icon: Zap, title: 'Performance Optimization', description: 'Building scalable and efficient applications' },
+    { icon: Heart, title: 'Team Leadership', description: 'Leading cross-functional teams and mentoring developers' }
+  ];
+
+  const experiences = [
+    {
+      title: 'Technical Manager',
+      company: 'Current Role',
+      period: '2020 - Present',
+      description: 'Leading technical teams and driving innovation in web development projects'
+    },
+    {
+      title: 'Senior Developer',
+      company: 'Previous Roles',
+      period: '2018 - 2020',
+      description: 'Full-stack development with focus on React and Node.js applications'
+    }
   ];
 
   return (
@@ -24,7 +39,7 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +51,7 @@ const About = () => {
                 <div className="p-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mr-4">
                   <User size={24} className="text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800">My Professional Journey</h3>
+                <h3 className="text-2xl font-bold text-slate-800">Tarun Sharma</h3>
               </div>
               
               <div className="space-y-6">
@@ -47,13 +62,19 @@ const About = () => {
                   viewport={{ once: true }}
                   className="p-4 bg-blue-50 border border-blue-200 rounded-lg"
                 >
-                  <div className="flex items-center mb-2">
-                    <GraduationCap size={20} className="text-blue-600 mr-2" />
-                    <h4 className="text-blue-700 font-semibold">Education Needed</h4>
+                  <div className="flex items-center mb-3">
+                    <Briefcase size={20} className="text-blue-600 mr-2" />
+                    <h4 className="text-blue-700 font-semibold">Professional Experience</h4>
                   </div>
-                  <p className="text-slate-600 text-sm">
-                    Please share your educational background, degrees, certifications, and relevant coursework to personalize this section.
-                  </p>
+                  <div className="space-y-3">
+                    {experiences.map((exp, index) => (
+                      <div key={index} className="border-l-2 border-blue-200 pl-4">
+                        <h5 className="font-semibold text-slate-700">{exp.title}</h5>
+                        <p className="text-sm text-blue-600">{exp.company} • {exp.period}</p>
+                        <p className="text-sm text-slate-600 mt-1">{exp.description}</p>
+                      </div>
+                    ))}
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -61,32 +82,56 @@ const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   viewport={{ once: true }}
-                  className="p-4 bg-blue-50 border border-blue-200 rounded-lg"
+                  className="p-4 bg-green-50 border border-green-200 rounded-lg"
                 >
-                  <div className="flex items-center mb-2">
-                    <Briefcase size={20} className="text-blue-600 mr-2" />
-                    <h4 className="text-blue-700 font-semibold">Experience Needed</h4>
+                  <div className="flex items-center mb-3">
+                    <Award size={20} className="text-green-600 mr-2" />
+                    <h4 className="text-green-700 font-semibold">Key Achievements</h4>
                   </div>
-                  <p className="text-slate-600 text-sm">
-                    Please provide your work experience, previous roles, companies, and key achievements to complete your professional story.
-                  </p>
+                  <ul className="text-sm text-slate-600 space-y-2">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Led cross-functional teams in delivering complex web applications
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Expertise in React, Node.js, Python, and modern development practices
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Strong background in technical management and team leadership
+                    </li>
+                  </ul>
                 </motion.div>
 
-                <div className="pt-4 border-t border-white/10">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="p-4 bg-purple-50 border border-purple-200 rounded-lg"
+                >
+                  <div className="flex items-center mb-3">
+                    <MapPin size={20} className="text-purple-600 mr-2" />
+                    <h4 className="text-purple-700 font-semibold">Contact Information</h4>
+                  </div>
+                  <div className="text-sm text-slate-600 space-y-1">
+                    <p>📧 tarun.sharma1603@gmail.com</p>
+                    <p>📱 +91-9008237936</p>
+                  </div>
+                </motion.div>
+
+                <div className="pt-4 border-t border-slate-200">
                   <p className="text-slate-600 leading-relaxed">
-                    I'm a passionate frontend developer specializing in React, TypeScript, and modern web technologies. 
-                    I love creating intuitive user experiences and building scalable applications.
+                    I'm a passionate Technical Manager with extensive experience in full-stack development, 
+                    specializing in React, Node.js, and Python. I love leading teams, mentoring developers, 
+                    and building scalable applications that solve real-world problems.
                   </p>
                   <p className="text-slate-600 mt-4 leading-relaxed">
-                    <strong className="text-slate-700">📧 Please share your CV details so I can personalize this section with:</strong>
+                    With a strong background in both technical development and team management, I bring 
+                    a unique perspective to every project, ensuring both technical excellence and 
+                    successful team collaboration.
                   </p>
-                  <ul className="text-slate-500 mt-2 ml-4 space-y-1 text-sm">
-                    <li>• Your educational background</li>
-                    <li>• Professional experience and roles</li>
-                    <li>• Key achievements and projects</li>
-                    <li>• Technical skills and certifications</li>
-                    <li>• Personal interests and career goals</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -122,6 +167,51 @@ const About = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* Technical Skills Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <h3 className="text-2xl font-bold text-slate-800 text-center mb-8">Technical Expertise</h3>
+          <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h4 className="font-semibold text-slate-700 mb-4">Frontend</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS'].map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-700 mb-4">Backend</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Node.js', 'Python', 'Express', 'REST APIs', 'Database Design'].map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-700 mb-4">Management</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Team Leadership', 'Project Management', 'Agile', 'Mentoring', 'Technical Strategy'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
