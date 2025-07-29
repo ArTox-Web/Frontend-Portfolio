@@ -123,8 +123,8 @@ const About = () => {
 
                 <div className="pt-4 border-t border-slate-200">
                   <p className="text-slate-600 leading-relaxed">
-                    I'm a passionate Technical Manager with extensive experience in full-stack development, 
-                    specializing in React, Node.js, and Python. I love leading teams, mentoring developers, 
+                    I'm a passionate Engineer with extensive experience in full-stack development, 
+                    specializing in React, Node.js, Express.js and AI tools. I love leading teams, mentoring developers, 
                     and building scalable applications that solve real-world problems.
                   </p>
                   <p className="text-slate-600 mt-4 leading-relaxed">
