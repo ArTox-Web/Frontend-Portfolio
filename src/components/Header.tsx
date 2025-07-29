@@ -25,7 +25,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent"
           >
-            Portfolio
+            ArTox-Web Portfolio
           </motion.div>
 
           {/* Desktop Navigation */}
