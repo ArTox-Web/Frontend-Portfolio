@@ -12,17 +12,23 @@ const About = () => {
 
   const experiences = [
     {
-      title: 'Technical Manager',
-      company: 'Current Role',
-      period: '2020 - Present',
-      description: 'Leading technical teams and driving innovation in web development projects'
+      title: 'Lead Developer',
+      company: 'Merkur Gaming',
+      period: '2022 - 2023',
+      description: 'Leading technical teams and driving innovation in game development projects'
     },
     {
       title: 'Senior Developer',
-      company: 'Previous Roles',
-      period: '2018 - 2020',
+      company: 'Xebia Solutions Architects',
+      period: '2021 - 2022',
       description: 'Full-stack development with focus on React and Node.js applications'
-    }
+    },
+     {
+      title: 'Frontend Developer',
+      company: 'Wipro Ltd',
+      period: '2019 - 2021',
+      description: 'Full-stack development with focus on React and Node.js applications'
+    },
   ];
 
   return (
