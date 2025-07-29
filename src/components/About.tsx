@@ -4,7 +4,7 @@ import { Code, Palette, Zap, Heart, User, GraduationCap, Briefcase, Award, MapPi
 
 const About = () => {
   const skills = [
-    { icon: Code, title: 'Full-Stack Development', description: 'React, Node.js, Python, and modern web technologies' },
+    { icon: Code, title: 'Full-Stack Development', description: 'React, Node.js, AI Tools, and modern web technologies' },
     { icon: Palette, title: 'UI/UX Design', description: 'Creating beautiful and intuitive user interfaces' },
     { icon: Zap, title: 'Performance Optimization', description: 'Building scalable and efficient applications' },
     { icon: Heart, title: 'Team Leadership', description: 'Leading cross-functional teams and mentoring developers' }
