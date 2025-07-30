@@ -23,6 +23,21 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <motion.div
             whileHover={{ scale: 1.05 }}
+            className="flex items-center space-x-3"
+          >
+            <img 
+              src="/Logo.jpg" 
+              alt="ArTox-Web Logo" 
+              className="h-10 w-10 rounded-full object-cover"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent">
+              ArTox-Web
+            </span>
+          </motion.div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-8">
+            whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent"
           >
             ArTox-Web
